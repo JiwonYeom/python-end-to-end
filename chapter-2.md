@@ -26,3 +26,12 @@
 
 > Personal thoughts: Python does not compile the whole body of code. Not even for function / class creations. This is unlike more static languages like `C`, `C++`, `Java`, etc. Reversely speaking, the latter languages compile & run. This is probably why running a `Java` compilation will end up pre-alert of exception whilst script languages execute until the error is found.
 
+#### Execution Model Variations
+* Python implementation alternatives
+    * `CPython` : Standard implementation.
+    * `PyPy` runs programs much faster. 
+    * `Jython` : different runtime architecture to call out to Java
+    * `IronPython` : different runtime architecture to call out to .NET
+    * `Stackless` : oriented towards concurrency - does not save state on C language, allows small stack architectures, efficient multiprocessing options, etc.
+    * `PyPy` : JIT compiler, provides sandbox models (untrused code testing). Includes support for Stackless. Aims for performance & speed  
+
