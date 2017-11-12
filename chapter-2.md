@@ -35,3 +35,11 @@
     * `Stackless` : oriented towards concurrency - does not save state on C language, allows small stack architectures, efficient multiprocessing options, etc.
     * `PyPy` : JIT compiler, provides sandbox models (untrused code testing). Includes support for Stackless. Aims for performance & speed  
 
+#### Execution Optimization Tool
+* Includes tools like `Cython`(python / C), `Shed Skin`(python / C++), `Psyco`(focus on running Python faster - succeeded by `PyPy`)
+
+#### Frozon Binaries
+* How does Python program generate standalone binary executables
+* Frozen binaries bundle byte code of program files, PVM, and any dependencies into a single package. 
+* Ex. py2exe, py2app, freeze, cx_freeze, etc
+* not same as output of a true compiler. It runs byte code through a virtual machine and run at the same speed as the original source files. Not particularly small, but not that big either.
