@@ -39,3 +39,45 @@ print(2 ** 100)
 * There are two ways to print Python
     * full precision (as-code `repr`)
     * user-friendly form
+
+#### Strings
+* sequence (of one-character strings)
+* Sequence Operation
+    * sequencial operations assume positional ordering among items, which allows actions like finding length or fetching component with `index`
+    * Python allows arbitrary expression pretty much everywhere.
+```python
+# negative index
+S[-1]   # last character
+# slicing
+S[1:3]  # slicing 1~2
+S[:] # return a top-level copy of S
+```
+
+* Immutability
+    * Strings are immutable in Python
+    * immutable objects can never be overwritten
+    * core types (number, string, tuple) : immutable
+    * lists, dictionaries, can be changed.
+```python
+S = 'text'
+# possible
+S = S[1:] + 's'
+# not allowed
+S[0] = 'z' # TypeError: 'str' object does not support item assignment
+
+# Expand string to list
+S = 'string'
+L = list(S)     # ['s','t','r','i','n','g']
+L[1] = 'p'  # replace in place
+''.join(L)  # 'spring'
+
+# use bytearray - bytes/list hybrid
+# bytearray supports in-place changes for text but only for text with characters 8-bits wide. It is a distinct hybrid of immutable bytes strings and mutable lists
+
+B = bytearray(b'spam')
+B.extend(b'eggs')   # bytearray(b'spameggs')
+B.decode()
+'spameggs'
+```
+
+* Type-specific methods
