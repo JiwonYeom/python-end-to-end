@@ -10,6 +10,7 @@ My goal is to strengthen my foundational knowledge in how a programming language
 
 #### Reference Book
 * **Learning Python** : By *Mark Lutz*
+* **The Hitchhiker’s Guide to Python!** : By *Kenneth Reitz*
 
 #### Mechanism
 * Directories will be arranged by chapters of the book.
