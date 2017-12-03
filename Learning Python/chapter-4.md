@@ -81,3 +81,25 @@ B.decode()
 ```
 
 * Type-specific methods
+    * Strings have their own methods
+> Ex. `find()`, `replace()`, `split()`, `upper()`, `format()`... etc
+
+`format()` example
+```python
+# replacing strings per index
+'%s, eggs, and %s' % ('spam', 'SPAM!')
+> 'spam, eggs, and SPAM!'
+'{0}, eggs, and {1}'.format('spam', 'SPAM!')
+> 'spam, eggs, and SPAM!'
+'{}, eggs, and {}'.format('spam', 'SPAM!')
+> 'spam, eggs, and SPAM!'
+```
+
+* Python toolset is layered.
+    1. Generic operations that span multiple types show up as built-in (len(X), X[0])
+    2. Type-specific operations as method calls (aString.upper())
+
+> `dir()` and `help()` to the rescue!
+> - `dir()` function lists variables assigned in the caller's sciope. Methods are function attributes, so they will show up in the list.
+> - `help()` function gives you the explanations.
+
