@@ -36,7 +36,7 @@ print(2 ** 100)
     * first convert the result into string type with `str` function.
     * get the length with `len`
 
-* There are two ways to print Python
+* There are two ways to print in Python
     * full precision (as-code `repr`)
     * user-friendly form
 
@@ -100,6 +100,6 @@ B.decode()
     2. Type-specific operations as method calls (aString.upper())
 
 > `dir()` and `help()` to the rescue!
-> - `dir()` function lists variables assigned in the caller's sciope. Methods are function attributes, so they will show up in the list.
+> - `dir()` function lists variables assigned in the caller's scope. Methods are function attributes, so they will show up in the list.
 > - `help()` function gives you the explanations.
 
